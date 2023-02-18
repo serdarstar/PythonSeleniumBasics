@@ -15,6 +15,7 @@ chromeOptions.add_experimental_option("excludeSwitches", ['enable-automation'])
 
 driver = webdriver.Chrome(executable_path=ChromeDriverManager().install(), options=chromeOptions)
 driver.get("https://www.lowbrowcustoms.com/")
+
 print(driver.title)
 
 isHeadless=chromeOptions.headless
